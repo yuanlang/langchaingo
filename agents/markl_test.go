@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/yuanlang/langchaingo/schema"
+	"github.com/tmc/langchaingo/schema"
 )
 
 func TestMRKLOutputParser(t *testing.T) {

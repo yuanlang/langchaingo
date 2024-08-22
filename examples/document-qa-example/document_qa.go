@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/yuanlang/langchaingo/chains"
-	"github.com/yuanlang/langchaingo/llms/openai"
-	"github.com/yuanlang/langchaingo/schema"
+	"github.com/tmc/langchaingo/chains"
+	"github.com/tmc/langchaingo/llms/openai"
+	"github.com/tmc/langchaingo/schema"
 )
 
 func main() {

@@ -6,8 +6,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/yuanlang/langchaingo/embeddings"
-	"github.com/yuanlang/langchaingo/vectorstores"
+	"github.com/tmc/langchaingo/embeddings"
+	"github.com/tmc/langchaingo/vectorstores"
 )
 
 const (

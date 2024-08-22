@@ -3,7 +3,7 @@ package schema
 import (
 	"context"
 
-	"github.com/yuanlang/langchaingo/llms"
+	"github.com/tmc/langchaingo/llms"
 )
 
 // ChatMessageHistory is the interface for chat history in memory/store.

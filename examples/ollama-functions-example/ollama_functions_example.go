@@ -9,8 +9,8 @@ import (
 	"os"
 	"slices"
 
-	"github.com/yuanlang/langchaingo/llms"
-	"github.com/yuanlang/langchaingo/llms/ollama"
+	"github.com/tmc/langchaingo/llms"
+	"github.com/tmc/langchaingo/llms/ollama"
 )
 
 var flagVerbose = flag.Bool("v", false, "verbose mode")

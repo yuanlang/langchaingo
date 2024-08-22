@@ -3,7 +3,7 @@ package prompts
 import (
 	"fmt"
 
-	"github.com/yuanlang/langchaingo/llms"
+	"github.com/tmc/langchaingo/llms"
 )
 
 // SystemMessagePromptTemplate is a message formatter that returns a system message.

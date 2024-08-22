@@ -1,10 +1,10 @@
-module github.com/yuanlang/langchaingo/examples/sql-database-chain-example
+module github.com/tmc/langchaingo/examples/sql-database-chain-example
 
 go 1.22.0
 
 toolchain go1.22.1
 
-require github.com/yuanlang/langchaingo v0.1.12
+require github.com/tmc/langchaingo v0.1.12
 
 require (
 	github.com/Masterminds/goutils v1.1.1 // indirect

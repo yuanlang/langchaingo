@@ -7,9 +7,9 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/pinecone-io/go-pinecone/pinecone"
-	"github.com/yuanlang/langchaingo/embeddings"
-	"github.com/yuanlang/langchaingo/schema"
-	"github.com/yuanlang/langchaingo/vectorstores"
+	"github.com/tmc/langchaingo/embeddings"
+	"github.com/tmc/langchaingo/schema"
+	"github.com/tmc/langchaingo/vectorstores"
 	"google.golang.org/protobuf/types/known/structpb"
 )
 

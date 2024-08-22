@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/yuanlang/langchaingo/embeddings"
+	"github.com/tmc/langchaingo/embeddings"
 )
 
 const (

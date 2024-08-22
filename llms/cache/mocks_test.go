@@ -3,7 +3,7 @@ package cache
 import (
 	"context"
 
-	"github.com/yuanlang/langchaingo/llms"
+	"github.com/tmc/langchaingo/llms"
 )
 
 // === Mock for llms.Model

@@ -7,9 +7,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/yuanlang/langchaingo/memory"
-	"github.com/yuanlang/langchaingo/prompts"
-	"github.com/yuanlang/langchaingo/schema"
+	"github.com/tmc/langchaingo/memory"
+	"github.com/tmc/langchaingo/prompts"
+	"github.com/tmc/langchaingo/schema"
 )
 
 var errDummy = errors.New("boom")
