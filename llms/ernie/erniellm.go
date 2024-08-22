@@ -75,6 +75,11 @@ func (o *LLM) GenerateContent(ctx context.Context, messages []llms.MessageConten
 		opt(opts)
 	}
 
+	// Give a default temperature 0.8, when user not set
+	if opts.Temperature <= 0 {
+		opts.Temperature = 0.8
+	}
+
 	// Assume we get a single text message
 	msg0 := messages[0]
 	part := msg0.Parts[0]
