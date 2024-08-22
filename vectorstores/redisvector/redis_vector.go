@@ -4,10 +4,11 @@ import (
 	"context"
 	"errors"
 
+	"golang.org/x/exp/maps"
+
 	"github.com/tmc/langchaingo/embeddings"
 	"github.com/tmc/langchaingo/schema"
 	"github.com/tmc/langchaingo/vectorstores"
-	"golang.org/x/exp/maps"
 )
 
 const (

@@ -7,12 +7,13 @@ import (
 	"regexp"
 	"strings"
 
+	"go.starlark.net/lib/math"
+	"go.starlark.net/starlark"
+
 	"github.com/tmc/langchaingo/llms"
 	"github.com/tmc/langchaingo/memory"
 	"github.com/tmc/langchaingo/prompts"
 	"github.com/tmc/langchaingo/schema"
-	"go.starlark.net/lib/math"
-	"go.starlark.net/starlark"
 )
 
 //go:embed prompts/llm_math.txt

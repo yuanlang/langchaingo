@@ -5,6 +5,7 @@ import (
 
 	"github.com/nlpodyssey/cybertron/pkg/models/bert"
 	"github.com/nlpodyssey/cybertron/pkg/tasks/textencoding"
+
 	"github.com/tmc/langchaingo/embeddings"
 )
 

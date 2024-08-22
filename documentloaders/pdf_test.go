@@ -8,6 +8,7 @@ import (
 	"github.com/ledongthuc/pdf"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
 	"github.com/tmc/langchaingo/textsplitter"
 )
 

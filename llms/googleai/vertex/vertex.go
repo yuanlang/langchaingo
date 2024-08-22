@@ -13,9 +13,10 @@ import (
 	"strings"
 
 	"cloud.google.com/go/vertexai/genai"
+	"google.golang.org/api/iterator"
+
 	"github.com/tmc/langchaingo/internal/util"
 	"github.com/tmc/langchaingo/llms"
-	"google.golang.org/api/iterator"
 )
 
 var (

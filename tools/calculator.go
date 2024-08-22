@@ -4,9 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/tmc/langchaingo/callbacks"
 	"go.starlark.net/lib/math"
 	"go.starlark.net/starlark"
+
+	"github.com/tmc/langchaingo/callbacks"
 )
 
 // Calculator is a tool that can do math.

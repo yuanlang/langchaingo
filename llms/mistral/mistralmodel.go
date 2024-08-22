@@ -6,6 +6,7 @@ import (
 	"os"
 
 	sdk "github.com/gage-technologies/mistral-go"
+
 	"github.com/tmc/langchaingo/callbacks"
 	"github.com/tmc/langchaingo/llms"
 )

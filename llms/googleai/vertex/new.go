@@ -7,6 +7,7 @@ import (
 	"context"
 
 	"cloud.google.com/go/vertexai/genai"
+
 	"github.com/tmc/langchaingo/callbacks"
 	"github.com/tmc/langchaingo/llms"
 	"github.com/tmc/langchaingo/llms/googleai"

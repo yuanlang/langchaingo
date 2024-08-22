@@ -5,6 +5,7 @@ import (
 	"io"
 
 	"github.com/ledongthuc/pdf"
+
 	"github.com/tmc/langchaingo/schema"
 	"github.com/tmc/langchaingo/textsplitter"
 )

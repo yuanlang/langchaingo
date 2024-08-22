@@ -7,6 +7,7 @@ import (
 	"io"
 
 	"github.com/AssemblyAI/assemblyai-go-sdk"
+
 	"github.com/tmc/langchaingo/schema"
 	"github.com/tmc/langchaingo/textsplitter"
 )

@@ -10,6 +10,7 @@ import (
 	"time"
 
 	"github.com/gocolly/colly"
+
 	"github.com/tmc/langchaingo/tools"
 )
 

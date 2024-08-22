@@ -10,8 +10,9 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/redis/rueidis"
-	"github.com/tmc/langchaingo/schema"
 	"golang.org/x/exp/maps"
+
+	"github.com/tmc/langchaingo/schema"
 )
 
 // RedisClient interface of redis client, easy to replace third redis client package

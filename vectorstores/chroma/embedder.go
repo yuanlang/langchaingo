@@ -4,6 +4,7 @@ import (
 	"context"
 
 	chromatypes "github.com/amikos-tech/chroma-go/types"
+
 	"github.com/tmc/langchaingo/embeddings"
 )
 

@@ -10,6 +10,7 @@ import (
 	"net/url"
 
 	"github.com/google/uuid"
+
 	"github.com/tmc/langchaingo/schema"
 )
 
