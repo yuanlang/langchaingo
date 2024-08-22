@@ -32,11 +32,14 @@ Answer: Final answer here
 const _defaultSQLSuffix = `Only use the following tables:
 {{.table_info}}
 
+Additional info: {{.additional_info}}
+
 Question: {{.input}}`
 
 const (
 	_sqlChainDefaultInputKeyQuery      = "query"
 	_sqlChainDefaultInputKeyTableNames = "table_names_to_use"
+	_sqlChainDefaultInputKeyAddInfo    = "additional_info"
 	_sqlChainDefaultOutputKey          = "result"
 )
 
@@ -80,6 +83,11 @@ func (s SQLDatabaseChain) Call(ctx context.Context, inputs map[string]any, optio
 		return nil, fmt.Errorf("%w: %w", ErrInvalidInputValues, ErrInputValuesWrongType)
 	}
 
+	additionalInfo, ok := inputs[_sqlChainDefaultInputKeyAddInfo]
+	if !ok {
+		return nil, fmt.Errorf("%w: %w", ErrInvalidInputValues, ErrInputValuesWrongType)
+	}
+
 	var tables []string
 	if ts, ok := inputs[_sqlChainDefaultInputKeyTableNames]; ok {
 		if tables, ok = ts.([]string); !ok {
@@ -100,10 +108,11 @@ func (s SQLDatabaseChain) Call(ctx context.Context, inputs map[string]any, optio
 		stopWord        = "\nSQLResult:" //nolint:gosec
 	)
 	llmInputs := map[string]any{
-		"input":      query + queryPrefixWith,
-		"top_k":      s.TopK,
-		"dialect":    s.Database.Dialect(),
-		"table_info": tableInfos,
+		"input":           query + queryPrefixWith,
+		"top_k":           s.TopK,
+		"dialect":         s.Database.Dialect(),
+		"table_info":      tableInfos,
+		"additional_info": additionalInfo,
 	}
 
 	// Predict sql query
