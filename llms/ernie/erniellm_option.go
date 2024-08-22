@@ -10,9 +10,9 @@ const (
 type ModelName string
 
 const (
-	ModelNameERNIEBot       = "ERNIE-Bot"
-	ModelNameERNIEBotTurbo  = "ERNIE-Bot-turbo"
-	ModelNameERNIEBotPro    = "ERNIE-Bot-pro"
+	ModelNameERNIEBot       = "ERNIE-4.0-8K"
+	ModelNameERNIEBotTurbo  = "ERNIE-4.0-Turbo-8K"
+	ModelNameERNIEBotPro    = "ERNIE-3.5-8K"
 	ModelNameBloomz7B       = "BLOOMZ-7B"
 	ModelNameLlama2_7BChat  = "Llama-2-7b-chat"
 	ModelNameLlama2_13BChat = "Llama-2-13b-chat"
