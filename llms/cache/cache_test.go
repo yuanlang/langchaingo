@@ -5,7 +5,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/llms"
+
+	"github.com/yuanlang/langchaingo/llms"
 )
 
 func TestCache_hashKeyForCache(t *testing.T) {

@@ -1,4 +1,4 @@
-module github.com/tmc/langchaingo/examples/huggingface-milvus-vectorstore-example
+module github.com/yuanlang/langchaingo/examples/huggingface-milvus-vectorstore-example
 
 go 1.22.0
 
@@ -6,7 +6,7 @@ toolchain go1.22.1
 
 require (
 	github.com/milvus-io/milvus-sdk-go/v2 v2.3.6
-	github.com/tmc/langchaingo v0.1.12
+	github.com/yuanlang/langchaingo v0.1.12
 )
 
 require (

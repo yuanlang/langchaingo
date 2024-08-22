@@ -6,9 +6,9 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/llms/openai"
-	"github.com/tmc/langchaingo/prompts"
-	"github.com/tmc/langchaingo/schema"
+	"github.com/yuanlang/langchaingo/llms/openai"
+	"github.com/yuanlang/langchaingo/prompts"
+	"github.com/yuanlang/langchaingo/schema"
 )
 
 func TestStuffDocuments(t *testing.T) {

@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/llms/googleai/palm"
+	"github.com/yuanlang/langchaingo/llms/googleai/palm"
 )
 
 func newVertexEmbedder(t *testing.T, opts ...Option) *EmbedderImpl {

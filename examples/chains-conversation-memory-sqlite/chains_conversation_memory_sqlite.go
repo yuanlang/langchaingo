@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/tmc/langchaingo/chains"
-	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/llms/openai"
-	"github.com/tmc/langchaingo/memory"
-	"github.com/tmc/langchaingo/memory/sqlite3"
+	"github.com/yuanlang/langchaingo/chains"
+	"github.com/yuanlang/langchaingo/llms"
+	"github.com/yuanlang/langchaingo/llms/openai"
+	"github.com/yuanlang/langchaingo/memory"
+	"github.com/yuanlang/langchaingo/memory/sqlite3"
 
 	_ "github.com/mattn/go-sqlite3"
 )

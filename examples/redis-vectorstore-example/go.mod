@@ -1,8 +1,8 @@
-module github.com/tmc/langchaingo/examples/redis-vectorstore-example
+module github.com/yuanlang/langchaingo/examples/redis-vectorstore-example
 
 go 1.22.2
 
-require github.com/tmc/langchaingo v0.1.12
+require github.com/yuanlang/langchaingo v0.1.12
 
 require (
 	github.com/Masterminds/goutils v1.1.1 // indirect

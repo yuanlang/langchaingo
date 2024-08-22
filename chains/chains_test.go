@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/prompts"
+	"github.com/yuanlang/langchaingo/llms"
+	"github.com/yuanlang/langchaingo/prompts"
 )
 
 type testLanguageModel struct {

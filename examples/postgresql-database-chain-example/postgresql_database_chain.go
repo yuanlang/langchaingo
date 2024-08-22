@@ -7,10 +7,10 @@ import (
 	"log"
 	"os"
 
-	"github.com/tmc/langchaingo/chains"
-	"github.com/tmc/langchaingo/llms/openai"
-	"github.com/tmc/langchaingo/tools/sqldatabase"
-	_ "github.com/tmc/langchaingo/tools/sqldatabase/postgresql"
+	"github.com/yuanlang/langchaingo/chains"
+	"github.com/yuanlang/langchaingo/llms/openai"
+	"github.com/yuanlang/langchaingo/tools/sqldatabase"
+	_ "github.com/yuanlang/langchaingo/tools/sqldatabase/postgresql"
 )
 
 func main() {
