@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/tmc/langchaingo/callbacks"
 	"github.com/tmc/langchaingo/llms/ernie"
 
 	"github.com/tmc/langchaingo/llms"
@@ -15,19 +16,22 @@ func main() {
 	llm, err := ernie.New(
 		ernie.WithModelName(ernie.ModelNameERNIEBot),
 		// Fill in your AK and SK here.
-		ernie.WithAKSK("ak", "sk"),
+		//ernie.WithAKSK("ak", "sk"),
 		// Use an external cache for the access token.
-		ernie.WithAccessToken("accesstoken"),
+		//ernie.WithAccessToken("accesstoken"),
 	)
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	llm.CallbacksHandler = callbacks.LogHandler{}
 
 	ctx := context.Background()
 	resp, err := llm.GenerateContent(ctx,
 		[]llms.MessageContent{
 			llms.TextParts(llms.ChatMessageTypeHuman, "What is the weather like in Boston?"),
 		},
+		llms.WithTemperature(0.8),
 		llms.WithFunctions(functions))
 	if err != nil {
 		log.Fatal(err)
